@@ -1,0 +1,75 @@
+:root{
+    --lime_udkh: #32cd32;
+    --navy_udkh: #005B8A;
+}
+body{
+    background-color: var(--navy_udkh);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 10px;
+    color: black;
+    
+}
+
+article{
+    margin: auto;
+    font-size: 1.5em;
+    width: 50%;
+    
+}
+.ramecek{
+    height: 30%;
+    background-color: white;
+    padding: 20px 5px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+h1 {
+    color:  white;
+}
+
+label{
+    margin: 10px
+}
+
+.vstupy{
+    margin-top: 20px; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+       
+}
+
+#text-input{
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-bottom: 5px, dashed, var(--lime_udkh);
+}
+
+#check-btn{
+    width: 25%;
+    height: 30px;
+    border: 1px, solid, var(--navy_udkh);
+    border-radius: 15px;
+    background-color: var(--lime_udkh);
+    color: var(--navy);
+    font-weight: bold;
+    cursor: pointer;
+        
+}
+
+#napoveda {
+    height: 30%;
+    background-color: white;
+    padding: 20px 15px 20px 15px;
+    margin-bottom: 20px;
+    text-align:justify;
+    border-radius: 25px;
+    border: 2px, solid, var(--lime_udkh);
+}

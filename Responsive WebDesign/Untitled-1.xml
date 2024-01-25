@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <meta charset="UTF-8">
+    <title>Dekoherní konference - přihláška</title>
+    <link rel="stylesheet" href="styles.css" />
+  <h1 id="title">Deskoherní konference - přihláška</h1>
+  <p id="description">Ústav deskových a karetních her (ÚDKH) pro vás připravuje již 12. Deskoherní konferenci (AKA Herní víkend), a to v termínu od 27. 9. do 1. 10. 2023 v areálu táborové základny Běstvina.</p>
+  <p>Jedná se o víkend napěchovaný hraním deskových her, sportováním, výlety do okolí a další zábavou.
+Součástí konference budou i dobrovolné turnaje o věcné ceny.</p>
+<p>Cena pobytu je stanovena na 850 Kč za osobu za noc (750 Kč pro studenty VŠCHT Praha, děti do 3 let zdarma). V ceně pobytu je zahrnuto ubytování, plná penze (večeře v den příjezdu, snídaně, oběd), zajištění her a vysvětlovačů, odměny za turnaje a "herní koutek" pro děti.</p>
+
+  <form 
+id="survey-form" method="email" action="p.kovar92@gmail.com">
+<h2>Základní informace</h2>
+    <fieldset>
+    <label for="name" id="name-label">Name 
+      <input type="text" id="name" placeholder="Napiš své jméno a příjmení" required />
+    </label>
+    <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Napiš svůj email" required /></label>
+    <label for="age" id="number-label">Age (optional) <input type="number" min="10" max="99" id="number" placeholder="Napiš svůj věk" /></label>
+    <label for="dropdown">Jaký je tvůj vztah k VŠCHT Praha? 
+    <select id="dropdown">
+      <option value="1">Student</option>
+      <option value="2">Zaměstnanec</option>
+      <option value="3">Absolvent</option>
+      <option value="4">Jiný/Žádný</option>
+      </select>
+        </label>
+        </fieldset>
+                <h2>Informace o pobytu a stravování</h2>
+          <p>Cena pobytu je 850,- za osobu za noc (750 Kč pro studenty VŠCHT; děti do 3 let zdarma; zahrnuje ubytování; plnou penzi; program; ceny do turnajů).</p>
+          <p>Termín pobytu:
+středa 27. 9. 2023, 18:00 - neděle 1. 10. 2023, 14:00</p>
+ <fieldset>
+<label for="prijezd">Příjezd<input type="date" id="prijezd" required/></label>
+<label for="odjezd">Odjezd<input type="date" id="odjezd" required/></label>
+</fieldset>
+<fieldset>         <legend>Preferovaná forma ubytování:</legend>
+        <label for="chatka">
+        <input type="radio" id="chatka" value="chatka" class="inline" name="ubytovani" checked/>Chatka (2 lůžka)</label>
+          <label for="pokoj">
+        <input type="radio" id="pokoj"  value="pokoj" class="inline" name="ubytovani"/>Pokoj v budově (4 lůžka)</label>
+          <label for="srub">
+        <input type="radio" id="srub" value="srub" class="inline" name="ubytovani"/>Srub (6 lůžek)</label>
+          <label for="libovolne">
+        <input type="radio" id="libovolne" value="libovolne" class="inline" name="ubytovani"/>Je mi to jedno</label>
+        </fieldset>
+        <fieldset>
+           <legend>S kým chci sdílet ubikaci? (Do kolonky "Jiné" uveď jména spolubydlících)</legend>
+           <label for="spolubydlici_jmeno"class="inline">
+        <input type="radio" id="spolubydlici_jmeno" value="spolubydlici_jmeno" class="inline" name="spolubydlici" checked/>Jména:</label><input type="text" class="inline" id="spolubydlici_jmena"/>
+        <label for="jedno">
+        <input type="radio" id="jedno" value="jedno" name="spolubydlici" class="inline"/>Je mi to jedno</label>
+        <label for="sam">
+        <input type="radio" id="sam" value="sam" class="inline" name="spolubydlici"/>Pokud možno sám</label>
+</fieldset>
+<fieldset>           <legend>Alergie a omezení ve stravě:</legend>
+           <label for="zadna"><input type="checkbox" name="strava" id="zadna" class="inline" value="zadna"/>žádná omezení</label>
+           <label for="vegan"><input type="checkbox" name="strava" id="vegan"  class="inline" value="vegan"/>vegan</label>
+           <label for="vegetarian"><input type="checkbox" name="strava" id="vegetarian" value="vegetarian"  class="inline"/>vegetarián</label>
+           <label for="lepek"><input type="checkbox" name="strava" id="lepek" value="lepek" class="inline" />bez lepku</label>
+           <label for="laktoza"><input type="checkbox" name="laktoza" id="laktoza" value="laktoza" class="inline" />bez laktózy</label>
+           <label for="jina" ><input type="checkbox" name="strava" class="inline" id="jina" value="jina" />Jiná: <input type="text" id="jina_omezeni" class="inline"/></label>
+             </fieldset>
+                            <h2>Doplňující informace</h2>
+
+<fieldset>              <legend>Jaká hra by podle tebe na víkendu neměla chybět?</legend>
+               <legend>Seznam her:<a href="https://www.udkh.cz/#/games">https://www.udkh.cz/#/games</a></legend>
+               <input type="text" id="hry"/>
+               <legend>Jakékoliv otázky, připomínky či poznámky k akci či tvému pobytu.</legend>
+               <textarea id="pripominky"/></textarea>
+               </fieldbox>
+               <input type="submit" id="submit"/ value="Odeslat">
+    </form>
+
+
+
